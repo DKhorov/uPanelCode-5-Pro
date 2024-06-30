@@ -29,3 +29,5 @@ uLogic 2
 DK Studio Original Production
 © Copyrights DK Studio All rights reserved 2024
 Yhome Link™
+
+<img src="https://6681e0ffc6a6498d2257cd67--magenta-beijinho-85041d.netlify.app/ad7%204k.png">
