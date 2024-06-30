@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en/ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="shortcut icon" href="icon.png">   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="basicstyle.css">
+    <link rel="stylesheet" href="chatstyle.css">
+    <script src="script.js"></script>
+    <script src="font.js"></script>
+    <script src="SPA.js"></script>
+    <script src="SQH.js"></script>
+    
+    <title>uPanaelCode Pro 5</title>
+    <script>
+        function tg(){
+            window.open('https://t.me/dkdevelop')
+        }
+        function vib(){
+            window.open('https://invite.viber.com/?g2=AQAVKZ6hSfO%2F91DNFLnRjxQw0GLVbkvbwLYjTkxPDPLxUhsvJkh36xXYCLvHr9qi')
+        }
+        function git(){
+            window.open('https://github.com/DKhorov')
+        }
+    </script>
+</head>
+<body>
+ 
+
+
+<div class="center" id="main">
+  <div class="window1">
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+
+   
+
+      <h1 class="title">uPanel<span style="color: red;">Code</span></h1>
+      <h3 class="title" style="color: white; font-size: 40px; margin-top: -20px; font-weight: 100;">Welcome to the html notepad and streaming chat </h3>
+      <div class="center"><div id="time" class="jk"> 
+        <span id="id_H" style="color: white;">14</span>:<span id="id_M" style="color: white;">20</span>:<span id="id_S" style="color:white;">49</span>    
+        </div>  </div>
+      <div class="center"><a class="sccs" onclick="opencode()">Open uPanelCode editor</a></div>
+      <div class="webmess">
+        
+        <img src="telegram.png" height="60" onclick="tg()" class="web"> 
+        <img src="viber.png" height="60" onclick="vib()" class="web" style="margin-left: 10px;">
+        <img src="github.png" height="60" onclick="git()" class="web" style="background-color: white; border-radius: 70px; margin-left: 10px;">
+    
+    
+    </div>
+  </div>
+</div>
+
+<div id="codepanel" class="sdde">
+    <div class="right-click-area" style="text-align: center;">
+ 
+       <textarea class="box1" id="area" data-id="3">
+        fdsfdfsdghtyutyutyutyutyuy
+ 
+       </textarea>
+
+       <ul id="context-menu" class="context-menu-open" >
+          <li id="l2" class="cont-button"  onclick="myFunction()">Copy all </li>
+          <li id="l3" class="cont-button1" onclick="paste()">Cut all</li>
+          <li id="l6" class="cont-button1" onclick="start()">Start Code</li>
+          <li id="l4" class="cont-button" onclick="left()">Text left</li>
+          <li id="l5" class="cont-button" onclick="center()">Text Center</li>
+          <li id="l6" class="cont-button1" onclick="right()">Text Right</li>
+          <li id="l7" class="cont-button" onclick="small()">font small</li>
+          <li id="l8" class="cont-button" onclick="normal()">font normal</li>
+          <li id="l9" class="cont-button1" onclick="big()">font big</li>
+          <li id="l5" class="cont-button" onclick="arial()">Font Arial</li>
+          <li id="l6" class="cont-button" onclick="cor()">Font Courier New</li>
+          <li id="l7" class="cont-button1" onclick="times()">Font Times New Roman</li>
+          <li id="l10" class="cont-button" onclick="saveTextAsFile()">Save code in HTML</li>
+          <li id="l11" class="cont-button" onclick="js()">Save code in JS</li>
+          <li id="l11" class="cont-button1" onclick="savecss()">Save code in CSS</li>
+          <li id="l12" class="cont-button" onclick="get()">Export code from SQH</li>
+          <li id="l13" class="cont-button1" onclick="cook()">Import code in SQH</li>
+          <li id="l14" class="cont-button" onclick="cleararea()">Delete all text from textarea</li>
+          <li id="l15" class="cont-button" onclick="location.reload()">Reset uPanelCode</li>
+          <li id="l15" class="cont-button" onclick="closem()" style="color: red;">CLOSE MENU</li>
+
+       </ul>
+
+        <div class="container">
+            <div class="box2">      
+               <h2 class="titlebox" style="cursor: default; " title="uPanelCode 5 Centrino 1">uPanel<span style="color: red;">Code</span></h2>
+               <div class="center"><div class="wid1">
+                <img src="photowid1.jpg" height="90" onclick="night()" draggable="false">
+                <div class="clockw"><div class="center"><div id="clock2">14:20:48</div></div><img src="photowid3.jpg" height="90" style="margin-left: 5px;" draggable="false"></div>
+            
+               </div></div>
+               <div class="center"><div class="wid1">
+                <img src="photowid4.jpg"  onclick="azx()" height="90" draggable="false">
+                <img src="photowid2.jpg" onclick="light()" height="90" style="margin-left: 5px; border-radius: 15px;  " draggable="false">
+            
+               </div></div>
+               <h4 class="titlebox" style="color: white; cursor: default;" title="Select a color from the palette . Read GUIDE">Select color</h4>
+               <p style="margin-top: 20px;"><input class="color"  title="Select a color from the palette . Read GUIDE" id="color-picker"  type="color" style="margin-left: 48px; margin-top: -15px"><br></p>
+               <h4 class="cour" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 200; color: white;  font-size: 10px; margin-top: 5px;">Use keyboard shortcuts to insert text</h4>
+               <h4 class="cour" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 200; color: white;  font-size: 10px; margin-top: -1px;">Windows: ctrl+V  macOS: cmd+V</h4>
+
+               <ul id="context-menu2" class="context-menu-open" style="overflow: auto;   margin-top: -20%;">
+                <li id="l2" class="cont-button"  onclick="myFunction()">Copy all </li>
+                <li id="l3" class="cont-button1" onclick="paste()">Cut all </li>
+                <li id="l4" class="cont-button" onclick="left()">Text left</li>
+                <li id="l5" class="cont-button" onclick="center()">Text Center</li>
+                <li id="l6" class="cont-button" onclick="right()">Text Right</li>
+                <li id="l6" class="cont-button1" onclick="start()">Start Code</li>
+                <li id="l7" class="cont-button" onclick="small()">font small</li>
+                <li id="l8" class="cont-button" onclick="normal()">font normal</li>
+                <li id="l9" class="cont-button1" onclick="big()">font big</li>
+                <li id="l10" class="cont-button" onclick="saveTextAsFile()">Save code in HTML</li>
+                <li id="l11" class="cont-button" onclick="js()">Save code in JS</li>
+                <li id="l11" class="cont-button1" onclick="savecss()">Save code in CSS</li>
+                <li id="l12" class="cont-button" onclick="get()">Export code from SQH</li>
+                <li id="l13" class="cont-button1" onclick="cook()">Import code in SQH</li>
+                <li id="l14" class="cont-button" onclick="cleararea()">Delete all text from textarea</li>
+                <li id="l15" class="cont-button" onclick="location.reload()">Reset uPanelCode</li>
+                <li id="l15" class="cont-button" onclick="closem()">CLOSE MENU</li>
+      
+             </ul>
+            </div>
+    
+           <div class="box3">
+             <div class="mess-box">
+                <input class="messarea" id="message" type="text" placeholder="message area">
+                <button class="send-mess" id="send_message" >Send</button>
+                <input id="username" type="text" class="send-mess"  placeholder="Enter your name"/>
+                <button class="send-mess" id="send_username">Change name</button>
+             </div> 
+             <section id="chatroom">
+                <section id="feedback"></section>
+              </section>
+           </div>
+       </div>
+    
+   </div>
+</div>
+
+<div class="window9" id="pusho">
+    <div class="center">
+        <div class="push-notf">
+            <h1 class="push-title" style="color: red;">Внимание!</h1>
+            <h4 class="push-subtitle">Перед тем как смотреть проект сохраните его нажав на 'save code in html ' или нажмите "save in sqh" .  При компиляции проекта программа сбрасывается и если вы не сохранили код то он пропадет</h4><br>
+            <div class="push-button">
+               <div class="center">
+                 <button class="bth2" onclick="start()" title="OPEN GUIDE" style="width: 90%;">Start project</button>
+                 <button class="bth2" onclick="opencode()" title="OPEN GUIDE" style="width: 90%;">close push</button>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    window.onload = function(){
+        window.setInterval(function(){
+            var now = new Date();
+            var clock = document.getElementById("clock");
+            clock.innerHTML = now.toLocaleTimeString();
+        },1000);
+    };
+</script>
+<script>
+    window.onload = function(){
+        window.setInterval(function(){
+            var now = new Date();
+            var clock = document.getElementById("clock2");
+            clock.innerHTML = now.toLocaleTimeString();
+        },1000);
+    };
+</script>
+<script>
+
+    const menuArea = document.querySelector(".right-click-area");
+    const menu = document.querySelector(".right-click-menu");
+
+    menuArea.addEventListener( "contextmenu", event => {
+        event.preventDefault();
+        menu.style.top = `${event.clientY}px`;
+        menu.style.left = `${event.clientX}px`;
+        menu.classList.add("active");
+    }, false);
+
+    document.addEventListener("click", event => {
+        if (event.button !== 2) {
+            menu.classList.remove("active");
+        }
+    }, false);
+</script>
+<script>
+    function time () {
+      date = new Date(),
+      h = date.getHours(),
+      m = date.getMinutes(),
+      s = date.getSeconds(),
+    
+      h = (h < 10) ? '0' + h : h,
+      m = (m < 10) ? '0' + m : m,
+      s = (s < 10) ? '0' + s : s;
+    
+      hours  = document.getElementById("id_H");
+      minutes = document.getElementById("id_M");
+      seconds = document.getElementById("id_S");
+                
+      hours.innerHTML = h;   
+      minutes.innerHTML = m;
+      seconds.innerHTML = s;
+    };
+        
+    </script>
+    <script>setInterval(time, 1);</script>
+
+    <script>
+        (function() {
+ 
+ "use strict";
+
+ var taskItems = document.querySelectorAll(".box1");
+
+ for ( var i = 0, len = taskItems.length; i < len; i++ ) {
+   var taskItem = taskItems[i];
+   contextMenuListener(taskItem);
+ }
+
+ function contextMenuListener(el) {
+   el.addEventListener( "contextmenu", function(e) {
+     console.log(e, el);
+   });
+ }
+
+})();
+
+let contextMenu = document.querySelectorAll('.sdde'); 
+let contextMenuOpen = document.querySelector('.context-menu-open'); 
+for (let i = 0; i < contextMenu.length; i++){ 
+    contextMenu[i].addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        contextMenuOpen.style.left = e.clientX + 'px'; 
+        contextMenuOpen.style.top = e.clientY + 'px';
+        contextMenuOpen.style.display = 'block';
+    });
+}    
+window.addEventListener('click', function() {
+    contextMenuOpen.style.display = 'none';
+});
+    </script>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="chat.js"></script>
+
+</body></html>
