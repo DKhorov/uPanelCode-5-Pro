@@ -17,7 +17,7 @@ This command starts a local server with uPanelCode
 You need to change in chat.js file
 Instead of: var socket = io.connect('http://localhost:3000')
 On: var socket = io.connect('Here enter the IP of your PC')
-------------------------------------------------------------
+
 NameProduct: uPanelCode
 VersionProduct: 5.0.0
 ID Product: 122123323482984
